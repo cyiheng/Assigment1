@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.bjtuembedded.assigment1.MainActivity">
+
+    <Button
+        android:id="@+id/log_done"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginBottom="2dp"
+        android:layout_marginEnd="12dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/log"
+        app:layout_constraintBottom_toTopOf="@+id/news"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/welcome"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:layout_marginEnd="4dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="8dp"
+        android:gravity="center_vertical|center_horizontal"
+        android:text="@string/welcome"
+        app:layout_constraintEnd_toStartOf="@+id/log_done"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/book"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="1dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginTop="1dp"
+        android:contentDescription="@string/booking_trainers"
+        app:layout_constraintBottom_toTopOf="@+id/training"
+        app:layout_constraintEnd_toStartOf="@+id/calendarView"
+        app:layout_constraintStart_toStartOf="@+id/welcome"
+        app:layout_constraintTop_toBottomOf="@+id/news"
+        app:srcCompat="@android:color/holo_red_light" />
+
+    <ImageButton
+        android:id="@+id/news"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="2dp"
+        android:layout_marginEnd="12dp"
+        android:layout_marginTop="2dp"
+        android:contentDescription="@string/news"
+        app:layout_constraintBottom_toTopOf="@+id/book"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/welcome"
+        app:layout_constraintTop_toBottomOf="@+id/welcome"
+        app:srcCompat="@android:color/holo_green_light"></ImageButton>
+
+    <ImageButton
+        android:id="@+id/training"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginTop="1dp"
+        android:contentDescription="@string/actual_class"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/calendarView"
+        app:layout_constraintStart_toStartOf="@+id/welcome"
+        app:layout_constraintTop_toBottomOf="@+id/book"
+        app:srcCompat="@android:color/darker_gray" />
+
+    <CalendarView
+        android:id="@+id/calendarView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="12dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="2dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/training"
+        app:layout_constraintTop_toBottomOf="@+id/news" />
+
+</android.support.constraint.ConstraintLayout>
