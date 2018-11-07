@@ -29,7 +29,8 @@
             android:name=".News"
             android:parentActivityName=".MainActivity" />
         <activity android:name=".TrainerInfo" />
-        <activity android:name=".test"></activity>
+        <activity android:name=".test" />
+        <activity android:name=".BookingScreen"></activity>
     </application>
 
 </manifest>

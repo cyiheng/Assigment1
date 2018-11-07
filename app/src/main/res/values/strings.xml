@@ -42,4 +42,8 @@ Excogitatum est super his, ut homines quidam ignoti, vilitate ipsa parum cavendi
     <string name="trainer_photo">Trainer Photo</string>
     <string name="age">Age</string>
     <string name="book">Book</string>
+
+    <string name="date">Date</string>
+    <string name="time">Time</string>
+
 </resources>

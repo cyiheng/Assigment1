@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    tools:context="com.example.bjtuembedded.assigment1.BookingScreen">
+
+    <EditText
+        android:id="@+id/book_day"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="date"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/book_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="time"
+        app:layout_constraintStart_toStartOf="@+id/book_day"
+        app:layout_constraintTop_toBottomOf="@+id/book_day" />
+
+    <Button
+        android:id="@+id/book_OK"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@android:string/ok"
+        app:layout_constraintEnd_toEndOf="@+id/book_time"
+        app:layout_constraintTop_toBottomOf="@+id/book_time" />
+
+    <Button
+        android:id="@+id/book_cancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="4dp"
+        android:text="@android:string/cancel"
+        app:layout_constraintEnd_toStartOf="@+id/book_OK"
+        app:layout_constraintTop_toBottomOf="@+id/book_time" />
+</android.support.constraint.ConstraintLayout>
