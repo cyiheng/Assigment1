@@ -16,16 +16,16 @@ import android.widget.TextView;
 public class MainActivity extends AppCompatActivity {
 
     private Button aLog;
-    private ImageButton aNews;
-    private ImageButton aResearch;
+    private ImageView aNews;
+    private ImageView aResearch;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
         aLog = (Button)findViewById(R.id.log_done);
-        aNews = (ImageButton)findViewById(R.id.news);
-        aResearch = (ImageButton)findViewById(R.id.book);
+        aNews = (ImageView) findViewById(R.id.news);
+        aResearch = (ImageView)findViewById(R.id.book);
 
         aLog.setOnClickListener(new View.OnClickListener() {
             @Override
