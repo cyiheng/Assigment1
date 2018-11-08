@@ -31,6 +31,15 @@
         <activity android:name=".TrainerInfo" />
         <activity android:name=".test" />
         <activity android:name=".BookingScreen" />
+        <activity
+            android:name=".navigation_drawer"
+            android:label="@string/title_activity_navigation_drawer"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.bjtuembedded.assigment1.MainActivity" />
+        </activity>
     </application>
 
 </manifest>

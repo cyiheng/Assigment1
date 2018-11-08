@@ -45,5 +45,11 @@ Excogitatum est super his, ut homines quidam ignoti, vilitate ipsa parum cavendi
 
     <string name="date">Date</string>
     <string name="time">Time</string>
+    <string name="title_activity_navigation_drawer">navigation_drawer</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
 
 </resources>
