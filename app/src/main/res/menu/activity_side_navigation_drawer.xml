@@ -9,13 +9,13 @@
             android:icon="@drawable/ic_menu_camera"
             android:title="Log In" />
         <item
-            android:id="@+id/nav_gallery"
+            android:id="@+id/nav_lesson"
             android:icon="@drawable/ic_menu_gallery"
-            android:title="Gallery" />
+            android:title="Your Lessons" />
         <item
             android:id="@+id/nav_slideshow"
             android:icon="@drawable/ic_menu_slideshow"
-            android:title="Videos" />
+            android:title="Your Videos" />
         <item
             android:id="@+id/nav_manage"
             android:icon="@drawable/ic_menu_manage"

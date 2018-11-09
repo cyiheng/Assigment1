@@ -80,7 +80,7 @@ public class MainActivity extends AppCompatActivity
         if (id == R.id.nav_profile) {
             Intent vIntent = new Intent(MainActivity.this,LogIn.class);
             startActivity(vIntent);
-        } else if (id == R.id.nav_gallery) {
+        } else if (id == R.id.nav_lesson) {
 
         } else if (id == R.id.nav_slideshow) {
 
