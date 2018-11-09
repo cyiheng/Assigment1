@@ -5,17 +5,18 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageView;
 
 public class ResearchTrainer extends AppCompatActivity {
 
-    private Button aButton;
+    private ImageView aButton;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
 
         super.onCreate(savedInstanceState);
         setContentView(R.layout.research_trainer);
 
-        aButton =(Button)findViewById(R.id.button2);
+        aButton =(ImageView) findViewById(R.id.imageView1);
 
         aButton.setOnClickListener(new View.OnClickListener() {
             @Override

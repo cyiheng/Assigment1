@@ -4,74 +4,58 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.bjtuembedded.assigment1.MainActivity">
+    android:background="@color/mainColor"
+    tools:context="com.example.bjtuembedded.assigment1.MainActivity"
+    tools:showIn="@layout/app_bar_side_navigation">
 
-    <Button
-        android:id="@+id/log_done"
-        android:layout_width="wrap_content"
-        android:layout_height="0dp"
-        android:layout_marginBottom="2dp"
-        android:layout_marginEnd="12dp"
-        android:layout_marginTop="8dp"
-        android:text="@string/log"
-        app:layout_constraintBottom_toTopOf="@+id/news"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <TextView
-        android:id="@+id/welcome"
-        android:layout_width="0dp"
-        android:layout_height="40dp"
-        android:layout_marginEnd="4dp"
-        android:layout_marginStart="12dp"
-        android:layout_marginTop="8dp"
-        android:gravity="center_vertical|center_horizontal"
-        android:text="@string/welcome"
-        app:layout_constraintEnd_toStartOf="@+id/log_done"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <ImageButton
+    <ImageView
         android:id="@+id/book"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_marginBottom="1dp"
         android:layout_marginEnd="8dp"
         android:layout_marginTop="1dp"
+        android:clickable="true"
         android:contentDescription="@string/booking_trainers"
+        android:focusable="true"
         app:layout_constraintBottom_toTopOf="@+id/training"
         app:layout_constraintEnd_toStartOf="@+id/calendarView"
-        app:layout_constraintStart_toStartOf="@+id/welcome"
+        app:layout_constraintStart_toStartOf="@+id/news"
         app:layout_constraintTop_toBottomOf="@+id/news"
-        app:srcCompat="@android:color/holo_red_light" />
+        app:srcCompat="@drawable/trainers" />
 
-    <ImageButton
+    <ImageView
         android:id="@+id/news"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_marginBottom="2dp"
         android:layout_marginEnd="12dp"
-        android:layout_marginTop="2dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="50dp"
+        android:clickable="true"
         android:contentDescription="@string/news"
+        android:focusable="true"
         app:layout_constraintBottom_toTopOf="@+id/book"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="@+id/welcome"
-        app:layout_constraintTop_toBottomOf="@+id/welcome"
-        app:srcCompat="@android:color/holo_green_light"></ImageButton>
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/news"/>
 
-    <ImageButton
+    <ImageView
         android:id="@+id/training"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_marginBottom="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginTop="1dp"
+        android:clickable="true"
         android:contentDescription="@string/actual_class"
+        android:focusable="true"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/calendarView"
-        app:layout_constraintStart_toStartOf="@+id/welcome"
+        app:layout_constraintStart_toStartOf="@+id/news"
         app:layout_constraintTop_toBottomOf="@+id/book"
-        app:srcCompat="@android:color/darker_gray" />
+        app:srcCompat="@drawable/classe" />
 
     <CalendarView
         android:id="@+id/calendarView"
