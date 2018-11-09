@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
-    tools:context="com.example.bjtuembedded.assigment1.navigation_drawer"
-    tools:showIn="@layout/app_bar_navigation_drawer">
+    tools:context="com.example.bjtuembedded.assigment1.MainActivity"
+    tools:showIn="@layout/app_bar_side_navigation">
 
 </android.support.constraint.ConstraintLayout>

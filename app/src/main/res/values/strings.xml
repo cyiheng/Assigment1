@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Assigment1</string>
+    <string name="app_name">GYM UI - Assigment1</string>
     <string name="log">Log</string>
     <string name="welcome">Welcome</string>
     <string name="booking_trainers">Booking_trainers</string>
@@ -51,5 +51,9 @@ Excogitatum est super his, ut homines quidam ignoti, vilitate ipsa parum cavendi
     <string name="navigation_drawer_close">Close navigation drawer</string>
 
     <string name="action_settings">Settings</string>
+    <string name="title_activity_side_navigation">SideNavigation</string>
+
+    <string name="side_email">maybeYour@email.here</string>
+    <string name="side_profile">Your Profile</string>
 
 </resources>
